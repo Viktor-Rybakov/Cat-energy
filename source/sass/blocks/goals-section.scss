@@ -1,0 +1,17 @@
+// Goals-section
+
+.goals-section {
+  padding-top: 22px;
+}
+
+.goals-section__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.goals-section__item {
+  &:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+}

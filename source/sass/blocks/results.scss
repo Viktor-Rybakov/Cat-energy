@@ -1,0 +1,55 @@
+/* stylelint-disable block-no-empty */
+// Results
+
+.results {
+  padding-top: 27px;
+  padding-bottom: 25px;
+  background-color: var(--darker-background-color);
+}
+
+.results__title {
+  margin-bottom: 33px;
+}
+
+.results__description {
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.results__list {
+  margin-bottom: 42px;
+}
+
+.results__item {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  text-transform: lowercase;
+
+  &--cost {
+    font-family: "Oswald", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--contrast-dark-text-color);
+    text-transform: uppercase;
+  }
+}
+
+.results__value {
+  font-size: 24px;
+  color: var(--contrast-dark-text-color);
+  text-transform: uppercase;
+
+  &--cost {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.results__slider {
+
+}

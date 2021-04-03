@@ -1,0 +1,35 @@
+/* stylelint-disable block-no-empty */
+// Top-section
+
+.top-section {
+  padding-top: 27px;
+  background: linear-gradient(to bottom, var(--accent-color), var(--accent-color) 302px, var(--light-backgound-color) 302px, var(--light-backgound-color));
+}
+
+.top-section__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 36px;
+  font-weight: 400;
+  color: var(--contrast-light-text-color);
+  text-align: center;
+}
+
+.top-section__slogan {
+  margin: 0;
+  margin-bottom: 29px;
+  font-size: 14px;
+  color: var(--contrast-light-text-color);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.top-section__image {
+  display: block;
+  width: 280px;
+  height: 270px;
+}
+
+.top-section__button {
+
+}

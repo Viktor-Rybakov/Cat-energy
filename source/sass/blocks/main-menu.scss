@@ -1,0 +1,21 @@
+/* stylelint-disable block-no-empty */
+// Main-menu
+
+.main-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-menu__item {
+  &--current {
+
+  }
+}
+
+.main-menu__link {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--contrast-dark-text-color);
+  text-transform: uppercase;
+}

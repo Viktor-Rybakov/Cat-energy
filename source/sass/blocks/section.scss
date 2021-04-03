@@ -1,0 +1,19 @@
+/* stylelint-disable block-no-empty */
+// Section
+
+.section {
+
+}
+
+.section__main-title {
+  font-size: 36px;
+  color: var(--contrast-dark-text-color);
+}
+
+.section__title {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  color: var(--contrast-dark-text-color);
+}
