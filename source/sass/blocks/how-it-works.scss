@@ -1,0 +1,27 @@
+/* stylelint-disable block-no-empty */
+// How-it-works
+
+.how-it-works {
+  padding-top: 27px;
+  padding-bottom: 42px;
+}
+
+.how-it-works__title {
+  margin-bottom: 38px;
+}
+
+.how-it-works__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.how-it-works__item {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+
+  &:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+}

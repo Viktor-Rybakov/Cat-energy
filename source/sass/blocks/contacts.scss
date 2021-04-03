@@ -1,0 +1,31 @@
+/* stylelint-disable block-no-empty */
+// Contacts
+
+.contacts {
+
+}
+
+.contacts__container {
+  padding: 20px 28px;
+}
+
+.contacts__slogan {
+  margin: 0;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--contrast-dark-text-color-2);
+  text-transform: uppercase;
+}
+
+.contacts__address-wrapper {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 20px;
+}
+
+.contacts__map {
+  width: 100%;
+  height: 362px;
+  border: none;
+}

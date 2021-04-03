@@ -1,1 +1,29 @@
-// Начните писать стили здесь
+// Common styles
+
+@import "normalize.scss";
+@import "global.scss";
+@import "variables.scss";
+@import "fonts.scss";
+@import "visually-hidden.scss";
+
+// Blocks
+
+@import "blocks/container.scss";
+@import "blocks/page.scss";
+@import "blocks/header.scss";
+@import "blocks/logo.scss";
+@import "blocks/navigation.scss";
+@import "blocks/main-menu.scss";
+@import "blocks/menu-button.scss";
+@import "blocks/main.scss";
+@import "blocks/section.scss";
+@import "blocks/top-section.scss";
+@import "blocks/button.scss";
+@import "blocks/goals-section.scss";
+@import "blocks/goal.scss";
+@import "blocks/how-it-works.scss";
+@import "blocks/results.scss";
+@import "blocks/slider.scss";
+@import "blocks/contacts.scss";
+@import "blocks/socials.scss";
+@import "blocks/footer.scss";
