@@ -1,0 +1,82 @@
+/* stylelint-disable block-no-empty */
+// Form
+
+.form {
+
+}
+
+.form__fieldset {
+  border: none;
+
+  &--bordered {
+
+  }
+}
+
+.form__label {
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__fieldset--bordered .form__label {
+  color: var(--contrast-dark-text-color-3);
+}
+
+.form__input {
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+
+  &::placeholder {
+    opacity: 1;
+  }
+}
+
+.form__radio {
+
+}
+
+.form__legend {
+  margin-bottom: 34px;
+  font-size: 24px;
+  line-height: 26px;
+  color: var(--contrast-dark-text-color);
+}
+
+.form__field-container {
+  position: relative;
+}
+
+.form__field-icon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(50%);
+}
+
+.form__textarea {
+  width: 100%;
+  height: 150px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+
+  &::placeholder {
+    opacity: 1;
+  }
+}
+
+.form__checkbox {
+
+}
+
+.form__submit {
+
+}
+
+.form__note {
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--contrast-dark-text-color);
+  text-align: center;
+}
