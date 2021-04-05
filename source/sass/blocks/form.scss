@@ -11,6 +11,10 @@
   &--bordered {
 
   }
+
+  &--addition {
+
+  }
 }
 
 .form__label {
@@ -22,12 +26,17 @@
   color: var(--contrast-dark-text-color-3);
 }
 
+.form__fieldset--addition .form__label {
+  color: var(--contrast-dark-text-color);
+}
+
 .form__input {
   line-height: 18px;
   text-transform: uppercase;
   color: var(--primary-text-color);
 
   &::placeholder {
+    color: var(--primary-text-color);
     opacity: 1;
   }
 }
@@ -62,6 +71,7 @@
   color: var(--primary-text-color);
 
   &::placeholder {
+    color: var(--primary-text-color);
     opacity: 1;
   }
 }
@@ -75,8 +85,14 @@
 }
 
 .form__note {
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
   color: var(--contrast-dark-text-color);
   text-align: center;
+}
+
+.form__note-small {
+  font-size: 14px;
+  line-height: 16px;
 }
