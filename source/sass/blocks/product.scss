@@ -1,0 +1,28 @@
+/* stylelint-disable block-no-empty */
+// Product
+
+.product {
+
+}
+
+.product__title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--contrast-dark-text-color-3);
+  text-transform: uppercase;
+}
+
+.product__parameters {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.product__param-name {
+
+}
+
+.product__param-value {
+  margin: 0;
+}

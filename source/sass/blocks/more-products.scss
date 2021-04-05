@@ -1,0 +1,29 @@
+/* stylelint-disable block-no-empty */
+// More-products
+
+.more-products {
+
+}
+
+.more-products__description {
+  margin: 0;
+  margin-bottom: 21px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--contrast-dark-text-color-2);
+
+  small {
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+    color: var(--primary-text-color);
+    line-height: 16px;
+    text-transform: initial;
+  }
+}
+
+.more-products__button {
+  color: var(--primary-text-color);
+  background-color: var(--dark-background-color);
+}
