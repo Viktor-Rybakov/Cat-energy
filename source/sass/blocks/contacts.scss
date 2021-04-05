@@ -2,11 +2,15 @@
 // Contacts
 
 .contacts {
-
+  background-color: var(--dark-background-color);
 }
 
 .contacts__container {
   padding: 20px 28px;
+
+  &--main {
+    background-color: var(--light-backgound-color);
+  }
 }
 
 .contacts__slogan {
