@@ -40,7 +40,7 @@
 
     <main class="main">
       <section class="section catalog">
-        <h1 class="section__main-title">Каталог продукции</h1>
+        <h1 class="section__main-title catalog__title">Каталог продукции</h1>
 
         <ul class="catalog__list">
           <li class="catalog__item">
@@ -192,7 +192,6 @@
 
           <li class="catalog__item">
             <div class="more-products">
-
               <p class="more-products__description">
                 Показать еще 100500 товаров <br>
                 <small>На самом деле вкусов гораздо больше!</small>
@@ -205,65 +204,67 @@
       </section>
 
       <section class="section addition-products">
-        <h2 class="section__title">Дополнительные товары</h2>
+        <h2 class="section__title addition-products--title">Дополнительные товары</h2>
 
-        <ul class="addition-products__list">
-          <li class="addition-products__item">
-            <article class="addition-product">
-              <h3 class="addition-product__title">Сахарозаменитель</h3>
+        <div class="container">
+          <ul class="addition-products__list">
+            <li class="addition-products__item">
+              <article class="addition-product">
+                <h3 class="addition-product__title">Сахарозаменитель</h3>
 
-              <dl class="addition-product__parameters">
-                <dt class="addition-product__param-name">1 упаковка (100 г)</dt>
-                <dd class="addition-product__param-value">200 Р.</dd>
-              </dl>
+                <div class="addition-product__wrapper">
+                  <span class="addition-product__param-name">1 упаковка (100 г)</span>
+                  <span class="addition-product__param-value">200 Р.</span>
+                </div>
 
-              <a class="button addition-product__button" href="#">Заказать</a>
-            </article>
-          </li>
+                <a class="button addition-product__button" href="#">Заказать</a>
+              </article>
+            </li>
 
-          <li class="addition-products__item">
-            <article class="addition-product">
-              <h3 class="addition-product__title">Питьевая вода</h3>
+            <li class="addition-products__item">
+              <article class="addition-product">
+                <h3 class="addition-product__title">Питьевая вода</h3>
 
-              <div class="addition-product__wrapper">
-                <span class="addition-product__volume">5 литров</span>
-                <span class="addition-product__cost">50 Р.</span>
-              </div>
+                <div class="addition-product__wrapper">
+                  <span class="addition-product__volume">5 литров</span>
+                  <span class="addition-product__cost">50 Р.</span>
+                </div>
 
-              <a class="button addition-product__button" href="#">Заказать</a>
-            </article>
-          </li>
+                <a class="button addition-product__button" href="#">Заказать</a>
+              </article>
+            </li>
 
-          <li class="addition-products__item">
-            <article class="addition-product">
-              <h3 class="addition-product__title">Молоко</h3>
+            <li class="addition-products__item">
+              <article class="addition-product">
+                <h3 class="addition-product__title">Молоко</h3>
 
-              <div class="addition-product__wrapper">
-                <span class="addition-product__volume">1 литр</span>
-                <span class="addition-product__cost">100 Р.</span>
-              </div>
+                <div class="addition-product__wrapper">
+                  <span class="addition-product__volume">1 литр</span>
+                  <span class="addition-product__cost">100 Р.</span>
+                </div>
 
-              <a class="button addition-product__button" href="#">Заказать</a>
-            </article>
-          </li>
+                <a class="button addition-product__button" href="#">Заказать</a>
+              </article>
+            </li>
 
-          <li class="addition-products__item">
-            <article class="addition-product">
-              <h3 class="addition-product__title">витамины</h3>
+            <li class="addition-products__item">
+              <article class="addition-product">
+                <h3 class="addition-product__title">витамины</h3>
 
-              <div class="addition-product__wrapper">
-                <span class="addition-product__volume">1 упаковка (30 г)</span>
-                <span class="addition-product__cost">300 Р.</span>
-              </div>
+                <div class="addition-product__wrapper">
+                  <span class="addition-product__volume">1 упаковка (30 г)</span>
+                  <span class="addition-product__cost">300 Р.</span>
+                </div>
 
-              <a class="button addition-product__button" href="#">Заказать</a>
-            </article>
-          </li>
-        </ul>
+                <a class="button addition-product__button" href="#">Заказать</a>
+              </article>
+            </li>
+          </ul>
 
-        <p class="addition-products__banner">
-          Закажите все и получите чехол для кота в подарок!
-        </p>
+          <p class="addition-products__banner">
+            Закажите все и получите чехол для кота в подарок!
+          </p>
+        </div>
       </section>
 
       <section class="section contacts">
