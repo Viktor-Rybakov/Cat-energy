@@ -2,13 +2,18 @@
 // Navigation
 
 .navigation {
-
+  display: grid;
+  grid-template-columns: 1fr min-content;
 }
 
 .navigation__menu {
-  display: none;
+  grid-column: span 2;
 }
 
 .navigation__menu-button {
+  grid-column: span 1 / -1;
 
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

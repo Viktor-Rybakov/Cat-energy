@@ -5,6 +5,14 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  &--closed {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .main-menu__item {
@@ -17,5 +25,6 @@
   font-size: 20px;
   font-weight: 500;
   color: var(--contrast-dark-text-color);
+  text-align: center;
   text-transform: uppercase;
 }
