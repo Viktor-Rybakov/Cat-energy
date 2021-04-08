@@ -17,6 +17,11 @@
       </a>
 
       <nav class="header__navigation navigation">
+        <button class="navigation__menu-button menu-button" type="button"
+                aria-label="Открыть меню" aria-controls="menu" aria-expanded="false">
+          <svg class="menu-button__icon"></svg>
+        </button>
+
         <ul id="menu" class="navigation__menu main-menu">
           <li class="main-menu__item">
             <a class="main-menu__link" href="/">Главная</a>
@@ -30,11 +35,6 @@
             <a class="main-menu__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
-
-        <button class="navigation__menu-button menu-button" type="button"
-                aria-label="Открыть меню" aria-controls="menu" aria-expanded="false">
-          <svg class="menu-button__icon"></svg>
-        </button>
       </nav>
     </header>
 
@@ -271,14 +271,16 @@
         <h2 class="visually-hidden">Наши контакты</h2>
 
         <div class="contacts__container">
-          <p class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</p>
-          <address class="contacts__address-wrapper">
-            <span class="contacts__address">ул. Большая Конюшенная, д. 19/8</span>
-            <span class="contacts__city">Санкт-Петербург</span>
-          </address>
-
-          <iframe class="contacts__map"></iframe>
+          <div class="contacts__address-container">
+            <p class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</p>
+            <address class="contacts__address-wrapper">
+              <span class="contacts__address">ул. Большая Конюшенная, д. 19/8</span>
+              <span class="contacts__city">Санкт-Петербург</span>
+            </address>
+          </div>
         </div>
+
+        <iframe class="contacts__map"></iframe>
       </section>
     </main>
 
