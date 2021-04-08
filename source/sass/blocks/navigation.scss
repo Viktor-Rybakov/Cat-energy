@@ -2,16 +2,16 @@
 // Navigation
 
 .navigation {
-  display: grid;
-  grid-template-columns: 1fr min-content;
+  display: flex;
+  flex-direction: column;
 }
 
 .navigation__menu {
-  grid-column: span 2;
+
 }
 
 .navigation__menu-button {
-  grid-column: span 1 / -1;
+  align-self: flex-end;
 
   @media (min-width: $tablet-width) {
     display: none;

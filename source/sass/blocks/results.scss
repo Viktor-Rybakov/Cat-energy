@@ -38,6 +38,14 @@
   grid-template-columns: repeat(2, 1fr);
   margin: 0;
   margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, max-content) 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .results__item {
@@ -60,6 +68,7 @@
   margin: 0;
   font-size: 24px;
   color: var(--contrast-dark-text-color);
+  text-align: center;
   text-transform: uppercase;
 
   &--cost {
@@ -69,8 +78,23 @@
 }
 
 .results__item-wrapper {
-  grid-column: span 2;
+  grid-column: span 1;
   display: flex;
+  flex-direction: column-reverse;
+
+  &--clean {
+    grid-column: span 2;
+    flex-direction: row;
+    justify-content: center;
+
+    @media (min-width: $tablet-width) {
+      grid-column: span 1;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: span 2;
+    }
+  }
 }
 
 .results__slider {
