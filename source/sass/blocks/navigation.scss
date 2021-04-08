@@ -2,13 +2,18 @@
 // Navigation
 
 .navigation {
-
+  display: flex;
+  flex-direction: column;
 }
 
 .navigation__menu {
-  display: none;
+
 }
 
 .navigation__menu-button {
+  align-self: flex-end;
 
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

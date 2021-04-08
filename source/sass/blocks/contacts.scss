@@ -3,10 +3,22 @@
 
 .contacts {
   background-color: var(--dark-background-color);
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }
 
 .contacts__container {
   padding: 20px 28px;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    width: 570px;
+    min-height: 201px;
+  }
 
   &--main {
     background-color: var(--light-backgound-color);
@@ -32,4 +44,8 @@
   width: 100%;
   height: 362px;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
