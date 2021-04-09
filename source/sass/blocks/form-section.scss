@@ -5,6 +5,24 @@
 
 }
 
+.form-section__container {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 70px;
+    padding-right: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .form-section__description {
   font-size: 14px;
   line-height: 18px;
