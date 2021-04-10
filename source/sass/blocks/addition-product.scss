@@ -1,0 +1,52 @@
+/* stylelint-disable block-no-empty */
+// Adition-product
+
+.addition-product {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "title"
+    "params"
+    "button";
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "title params"
+      "button button";
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "title params button";
+  }
+}
+
+.addition-product__title {
+  grid-area: title;
+  margin: 0;
+  margin-bottom: 13px;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--contrast-dark-text-color-3);
+  text-transform: uppercase;
+}
+
+.addition-product__wrapper {
+  grid-area: params;
+  margin-bottom: 15px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+}
+
+.addition-product__volume {
+
+}
+
+.addition-product__cost {
+
+}
+
+.addition-product__button {
+  grid-area: button;
+}
