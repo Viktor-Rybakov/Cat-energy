@@ -10,6 +10,65 @@
 }
 
 .socials__item {
+
+}
+
+.socials__icon {
+  transition: 0.2s;
+
+  &--vk {
+    width: 23px;
+    height: 16px;
+    fill: var(--icons-color);
+
+    @media (min-width: $tablet-width) {
+      width: 30px;
+      height: 22px;
+    }
+  }
+
+  &--instagram {
+    width: 16px;
+    height: 16px;
+    fill: var(--icons-color);
+
+    @media (min-width: $tablet-width) {
+      width: 23px;
+      height: 23px;
+    }
+  }
+
+  &--facebook {
+    width: 22px;
+    height: 22px;
+    stroke: var(--icons-color);
+
+    @media (min-width: $tablet-width) {
+      width: 28px;
+      height: 33px;
+    }
+  }
+}
+
+.socials__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
+
+  &:hover,
+  &:active {
+    .socials__icon {
+      fill: var(--accent-color);
+
+      &--facebook {
+        stroke: var(--accent-color);
+      }
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
