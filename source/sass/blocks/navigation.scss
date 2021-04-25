@@ -1,26 +1,30 @@
-/* stylelint-disable block-no-empty */
 // Navigation
 
 .navigation {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 66px;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-template-rows: 66px;
+  align-items: center;
+}
+
+.navigation__logo {
+  margin-bottom: 6px;
 }
 
 .navigation__menu-button {
-  align-self: flex-end;
-  width: 44px;
-  height: 44px;
-  margin-right: -10px;
-  padding: 0;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
+  display: none;
 
-  @media (min-width: $tablet-width) {
-    display: none;
+  @media (max-width: $mobile-width-only) {
+    justify-self: self-end;
+    display: block;
+    width: 44px;
+    height: 44px;
+    margin-right: -10px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
   }
 }
 
@@ -28,15 +32,18 @@
   stroke: var(--basic-black);
 }
 
-.navigation--no-js {
-  .navigation__menu {
+.navigation--no-js .navigation__menu {
+  @media (max-width: $mobile-width-only) {
     position: static;
+    grid-column: span 2;
+    margin-left: -20px;
+    margin-right: -20px;
     transform: none;
-    display: flex;
-    flex-direction: column;
   }
+}
 
-  .navigation__menu-button {
+.navigation--no-js .navigation__menu-button {
+  @media (max-width: $mobile-width-only) {
     display: none;
   }
 }

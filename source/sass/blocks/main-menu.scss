@@ -1,26 +1,30 @@
-/* stylelint-disable block-no-empty */
 // Main-menu
 
 .main-menu {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   list-style: none;
+  border-bottom: 1px solid var(--menu-border-color);
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    flex-direction: row;
+    border-bottom: none;
   }
 }
 
 .main-menu__item {
-  &--current {
-
-  }
+  background-color: var(--light-backgound-color);
 }
 
 .main-menu__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 66px;
   font-size: 20px;
   font-weight: 500;
-  color: var(--contrast-dark-text-color);
   text-align: center;
-  text-transform: uppercase;
+  border-top: 1px solid var(--menu-border-color);
 }

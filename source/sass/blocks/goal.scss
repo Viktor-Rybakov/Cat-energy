@@ -10,7 +10,7 @@
   }
 
   &--weight-gain::before {
-    content: url('/img/goal-weight-gain.svg');
+    content: url("../img/backgrounds/goal-weight-gain.svg");
     top: 25px;
     left: 13px;
     width: 67px;
@@ -18,7 +18,7 @@
   }
 
   &--weight-loss::before {
-    content: url('/img/goal-weight-loss.svg');
+    content: url("../img/backgrounds/goal-weight-loss.svg");
     top: 22px;
     left: 22px;
     width: 50px;
@@ -48,6 +48,11 @@
 }
 
 .goal__link {
+  padding-right: 40px;
   color: var(--contrast-dark-text-color);
   text-transform: uppercase;
+  background-image: url("../img/backgrounds/arrow.svg");
+  background-position: center right;
+  background-size: 24px 12px;
+  background-repeat: no-repeat;
 }

@@ -1,16 +1,21 @@
-/* stylelint-disable block-no-empty */
 // Logo
 
 .logo {
+  display: block;
+  transition: 0.2s;
+  cursor: pointer;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .logo__img {
-  width: 34px;
+  display: block;
+  width: 191px;
   height: 38px;
-}
-
-.logo__name {
-  width: 101px;
-  height: 18px;
 }

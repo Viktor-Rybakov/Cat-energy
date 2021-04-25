@@ -1,9 +1,13 @@
-/* stylelint-disable block-no-empty */
 // Top-section
 
 .top-section {
   padding-top: 27px;
-  background: linear-gradient(to bottom, var(--accent-color-background), var(--accent-color-background) 302px, var(--light-backgound-color) 302px, var(--light-backgound-color)), top center / 100% 302px no-repeat   url(/img/background-top.png);
+  background-image:
+    url("../img/backgrounds/background-top-mobile@1x.png"),
+    linear-gradient(to bottom, var(--accent-color-background), var(--accent-color-background) 302px, var(--light-backgound-color) 302px, var(--light-backgound-color));
+  background-position: top center, top center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 320px 302px, 100% 100%;
 }
 
 .top-section__title {
@@ -30,12 +34,10 @@
   height: 270px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
 }
 
 .top-section__button {
-  padding-top: 10px;
-  padding-bottom: 10px;
   font-size: 14px;
   line-height: 18px;
 }
