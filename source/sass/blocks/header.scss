@@ -4,13 +4,13 @@
   background-color: var(--light-backgound-color);
 
   @media (min-width: $tablet-width) {
-    height: 110px;
+    height: 76px;
+    background-color: transparent;
   }
 
   @media (min-width: $desktop-width) {
-    height: 140px;
-    margin-bottom: -140px;
-    background-color: transparent;
+    height: 112px;
+    margin-bottom: -112px;
   }
 }
 

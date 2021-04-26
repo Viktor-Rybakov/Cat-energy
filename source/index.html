@@ -13,7 +13,11 @@
     <header class="header">
       <nav class="header__navigation container navigation navigation--no-js">
           <a class="navigation__logo logo">
-            <img class="logo__img" src="img/logo-mobile.svg" width="192" height="37" alt="Логотип Cat Energy">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="logo__img" src="img/logo-mobile.svg" width="192" height="37" alt="Логотип Cat Energy">
+            </picture>
           </a>
 
           <button class="navigation__menu-button" type="button">
@@ -41,14 +45,35 @@
 
     <main class="page__main">
       <section class="section top-section">
-        <div class="container">
+        <div class="container top-section__container">
           <h1 class="top-section__title">Функциональное питание для котов</h1>
 
           <p class="top-section__slogan">Занялся собой? Займись котом!</p>
 
-          <img class="top-section__image" src="img/index-can-mobile.png"
-                alt="Упаковка кошачьего корма с куриным вкусом"
-                width="280" height="270">
+          <picture class="top-section__picture">
+            <source media="(min-width: 1440px)"
+                    type="image/webp"
+                    srcset="img/top-section-desktop@1x.webp 1x,
+                            img/top-section-desktop@2x.webp 2x">
+            <source media="(min-width: 1440px)"
+                    srcset="img/top-section-desktop@1x.png 1x,
+                            img/top-section-desktop@2x.png 2x">
+            <source media="(min-width: 768px)"
+                    type="image/webp"
+                    srcset="img/top-section-tablet@1x.webp 1x,
+                            img/top-section-tablet@2x.webp 2x">
+            <source media="(min-width: 768px)"
+                    srcset="img/top-section-tablet@1x.png 1x,
+                            img/top-section-tablet@2x.png 2x">
+            <source type="image/webp"
+                    srcset="img/top-section-mobile@1x.webp 1x,
+                            img/top-section-mobile@2x.webp 2x">
+            <img class="top-section__image"
+                  src="img/top-section-mobile@1x.png"
+                  srcset="img/top-section-mobile@2x.png 2x""
+                  alt="Упаковка кошачьего корма с куриным вкусом"
+                  width="280" height="270">
+          </picture>
 
           <a class="button top-section__button" href="form.html">
             <span>Подобрать программу</span>
