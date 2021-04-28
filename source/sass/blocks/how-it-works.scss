@@ -3,6 +3,14 @@
 .how-it-works {
   padding-top: 27px;
   padding-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 73px;
+  }
 }
 
 .how-it-works__title {
@@ -13,15 +21,21 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  counter-reset: counter;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 264px);
+    gap: 37px 120px;
+    justify-content: center;
+    margin-left: -60px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+    margin-left: 0;
   }
 }
 
@@ -31,31 +45,76 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
+  counter-increment: counter;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    display: block;
+    min-height: 280px;
+    padding-top: 34px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+  }
 
   &:not(:last-of-type) {
     margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
   }
 
   &::before {
+    content: "";
     display: block;
     width: 60px;
     height: 60px;
+    flex-grow: 0;
+    flex-shrink: 0;
     margin-right: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 31px;
+    }
   }
 
   &:nth-child(1)::before {
-    content: url("../img/backgrounds/how-it-works-1.svg");
+    background-image: url("../img/backgrounds/how-it-works-1.svg");
   }
 
   &:nth-child(2)::before {
-    content: url("../img/backgrounds/how-it-works-2.svg");
+    background-image: url("../img/backgrounds/how-it-works-2.svg");
   }
 
   &:nth-child(3)::before {
-    content: url("../img/backgrounds/how-it-works-3.svg");
+    background-image: url("../img/backgrounds/how-it-works-3.svg");
   }
 
   &:nth-child(4)::before {
-    content: url("../img/backgrounds/how-it-works-4.svg");
+    background-image: url("../img/backgrounds/how-it-works-4.svg");
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: counter(counter);
+      position: absolute;
+      z-index: -1;
+      left: 115px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 280px;
+      font-family: "Oswald", sans-serif;
+      line-height: 1;
+      color: var(--dark-background-color);
+    }
   }
 }
