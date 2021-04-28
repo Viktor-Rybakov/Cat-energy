@@ -5,25 +5,70 @@
   padding: 31px 20px 22px;
   background-color: var(--dark-background-color);
 
+  @media (min-width: $tablet-width) {
+    padding: 77px 315px 62px 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 77px 51px 62px 53px;
+  }
+
   &::before {
+    content: "";
     position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   &--weight-gain::before {
-    content: url("../img/backgrounds/goal-weight-gain.svg");
     top: 25px;
     left: 13px;
     width: 67px;
     height: 50px;
+    background-image: url("../img/backgrounds/goal-weight-gain.svg");
+
+    @media (min-width: $tablet-width) {
+      top: 92px;
+      left: auto;
+      right: 29px;
+      width: 268px;
+      height: 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 46px;
+      left: 33px;
+      right: auto;
+      width: 134px;
+      height: 100px;
+    }
   }
 
   &--weight-loss::before {
-    content: url("../img/backgrounds/goal-weight-loss.svg");
     top: 22px;
     left: 22px;
     width: 50px;
     height: 53px;
+    background-image: url("../img/backgrounds/goal-weight-loss.svg");
+
+    @media (min-width: $tablet-width) {
+      top: 78px;
+      left: auto;
+      right: 61px;
+      width: 200px;
+      height: 212px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 39px;
+      left: 52px;
+      right: auto;
+      width: 100px;
+      height: 106px;
+    }
   }
+
 }
 
 .goal__title {
@@ -35,6 +80,18 @@
   line-height: 37px;
   color: var(--contrast-dark-text-color);
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-bottom: 26px;
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 160px;
+    margin-bottom: 74px;
+  }
 }
 
 .goal__description {
@@ -45,6 +102,18 @@
   font-size: 14px;
   line-height: 18px;
   border-bottom: 1px solid var(--line-color);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+    padding-bottom: 0;
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 32px;
+  }
 }
 
 .goal__link {
@@ -55,4 +124,9 @@
   background-position: center right;
   background-size: 24px 12px;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 48px;
+    font-size: 20px;
+  }
 }
