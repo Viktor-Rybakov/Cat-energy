@@ -27,6 +27,10 @@
     height: 100%;
     margin-bottom: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(to top, var(--darker-background-color), var(--darker-background-color) 462px, var(--light-background-color) 462px);
+  }
 }
 
 .slider__image-wrapper {
@@ -38,7 +42,11 @@
   width: 50%;
   height: 100%;
   overflow: hidden;
-  background-image: linear-gradient(to top, var(--darker-background-color), var(--darker-background-color) 462px, var(--light-backgound-color) 462px);
+  background-image: linear-gradient(to top, var(--darker-background-color), var(--darker-background-color) 462px, var(--light-background-color) 462px);
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(to top, var(--dark-background-color), var(--dark-background-color) 462px, var(--light-background-color) 462px);
+  }
 }
 
 .slider__image {
@@ -155,20 +163,20 @@
     width: 34px;
     height: 34px;
     margin-top: -14px;
-    background-color: var(--light-backgound-color);
+    background-color: var(--light-background-color);
     border: 1px solid var(--results-border-color);
     border-radius: 50%;
-    box-shadow: inset 0 0 0 12px var(--light-backgound-color), inset 0 0 0 17px var(--accent-color), 0 1px 3px rgba(0, 0, 0, 0.16);
+    box-shadow: inset 0 0 0 12px var(--light-background-color), inset 0 0 0 17px var(--accent-color), 0 1px 3px rgba(0, 0, 0, 0.16);
     cursor: pointer;
   }
 
   &:hover::-webkit-slider-thumb {
-    box-shadow: inset 0 0 0 12px var(--light-backgound-color), inset 0 0 0 17px var(--accent-color), 0 2px 4px rgba(0, 0, 0, 0.19);
+    box-shadow: inset 0 0 0 12px var(--light-background-color), inset 0 0 0 17px var(--accent-color), 0 2px 4px rgba(0, 0, 0, 0.19);
   }
 
   &:focus::-webkit-slider-thumb {
     border: 1px solid var(--accent-color);
-    box-shadow: inset 0 0 0 12px var(--light-backgound-color), inset 0 0 0 17px var(--accent-color), 0 2px 4px rgba(0, 0, 0, 0.19);
+    box-shadow: inset 0 0 0 12px var(--light-background-color), inset 0 0 0 17px var(--accent-color), 0 2px 4px rgba(0, 0, 0, 0.19);
   }
 
   &::-webkit-slider-runnable-track {
@@ -182,20 +190,20 @@
   &::-moz-range-thumb {
     width: 34px;
     height: 34px;
-    background-color: var(--light-backgound-color);
+    background-color: var(--light-background-color);
     border: 1px solid var(--results-border-color);
     border-radius: 50%;
-    box-shadow: inset 0 0 0 12px var(--light-backgound-color), inset 0 0 0 17px var(--accent-color), 0 1px 3px rgba(0, 0, 0, 0.16);
+    box-shadow: inset 0 0 0 12px var(--light-background-color), inset 0 0 0 17px var(--accent-color), 0 1px 3px rgba(0, 0, 0, 0.16);
     cursor: pointer;
   }
 
   &:hover::-moz-range-thumb {
-    box-shadow: inset 0 0 0 12px var(--light-backgound-color), inset 0 0 0 17px var(--accent-color), 0 2px 4px rgba(0, 0, 0, 0.19);
+    box-shadow: inset 0 0 0 12px var(--light-background-color), inset 0 0 0 17px var(--accent-color), 0 2px 4px rgba(0, 0, 0, 0.19);
   }
 
   &:focus::-moz-range-thumb {
     border: 1px solid var(--accent-color);
-    box-shadow: inset 0 0 0 12px var(--light-backgound-color), inset 0 0 0 17px var(--accent-color), 0 2px 4px rgba(0, 0, 0, 0.19);
+    box-shadow: inset 0 0 0 12px var(--light-background-color), inset 0 0 0 17px var(--accent-color), 0 2px 4px rgba(0, 0, 0, 0.19);
   }
 
   &::-moz-range-track {
@@ -213,7 +221,7 @@
   height: 14px;
   margin-left: 15px;
   margin-right: 15px;
-  background-color: var(--light-backgound-color);
+  background-color: var(--light-background-color);
   border-radius: 6px;
   border: 1px solid var(--results-border-color);
 

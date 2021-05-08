@@ -9,7 +9,7 @@
   @media (min-width: $tablet-width) {
     padding-top: 43px;
     padding-bottom: 0;
-    background-color: var(--light-backgound-color);
+    background-color: var(--light-background-color);
     border-top: 1px solid var(--menu-border-color);
 
     &::before {
@@ -20,6 +20,11 @@
       bottom: 0;
       height: 462px;
       background-color: var(--darker-background-color);
+
+      @media (min-width: $desktop-width) {
+        background-size: 100% 100%;
+        background-image: linear-gradient(to right, var(--dark-background-color), var(--dark-background-color) calc(50% + 200px), var(--darker-background-color) calc(50% + 200px));
+      }
     }
   }
 
@@ -171,7 +176,7 @@
     bottom: -5px;
     font-size: 14px;
     line-height: 1;
-    background-color: var(--light-backgound-color);
+    background-color: var(--light-background-color);
   }
 
   @media (min-width: $desktop-width) {

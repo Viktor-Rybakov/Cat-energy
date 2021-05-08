@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: var(--light-backgound-color);
+  background-color: var(--light-background-color);
   border-bottom: 1px solid var(--menu-border-color);
 
   @media (min-width: $tablet-width) {
@@ -35,7 +35,7 @@
 
       @media (min-width: $desktop-width) {
         bottom: -13px;
-        background-color: var(--light-backgound-color);
+        background-color: var(--light-background-color);
       }
     }
   }
