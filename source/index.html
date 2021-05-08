@@ -70,7 +70,7 @@
                             img/top-section-mobile@2x.webp 2x">
             <img class="top-section__image"
                   src="img/top-section-mobile@1x.png"
-                  srcset="img/top-section-mobile@2x.png 2x""
+                  srcset="img/top-section-mobile@2x.png 2x"
                   alt="Упаковка кошачьего корма с куриным вкусом"
                   width="280" height="270">
           </picture>
@@ -92,7 +92,13 @@
                 Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
                 Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
               </p>
-              <a class="goal__link" href="#">Каталог slim</a>
+              <a class="goal__link" href="#">
+                <span>Каталог slim</span>
+
+                <svg class="goal__link-icon" width="32" height="12" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#arrow"></use>
+                </svg>
+              </a>
             </article>
           </li>
 
@@ -100,10 +106,16 @@
             <article class="goal goal--weight-gain">
               <h3 class="goal__title">Набор массы</h3>
               <p class="goal__description">
-                Заработать авторитет среди дворовых котов и даже собак?
+                Заработать авторитет среди дворовых котов и&nbsp;даже собак?
                 Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
               </p>
-              <a class="goal__link" href="#">Каталог pro</a>
+              <a class="goal__link" href="#">
+                <span>Каталог pro</span>
+
+                <svg class="goal__link-icon" width="32" height="12" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#arrow"></use>
+                </svg>
+              </a>
             </article>
           </li>
         </ul>
@@ -116,7 +128,7 @@
           <li class="how-it-works__item">Функциональное питание содержит только полезные питательные вещества.</li>
           <li class="how-it-works__item">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
           <li class="how-it-works__item">Замените один-два приема обычной еды на наше функциональное питание.</li>
-          <li class="how-it-works__item">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+          <li class="how-it-works__item">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!</li>
         </ul>
       </section>
 
@@ -126,7 +138,7 @@
 
           <p class="results__description">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-            Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+            Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по&#8209;прежнему спит по 16 часов в день.
           </p>
 
           <dl class="results__list">
@@ -149,21 +161,47 @@
           <div class="results__slider slider">
             <div class="slider__container">
               <div class="slider__image-wrapper">
-                <img class="slider__image slider__image--before" src="img/before-mobile.png" alt="Толстый кот"
-                      width="311" height="232">
+                <picture class="top-section__picture">
+                  <source media="(min-width: 768px)"
+                          type="image/webp"
+                          srcset="img/cat-fat-tablet@1x.webp 1x,
+                                  img/cat-fat-tablet@2x.webp 2x">
+                  <source media="(min-width: 768px)"
+                          srcset="img/cat-fat-tablet@1x.png 1x,
+                                  img/cat-fat-tablet@2x.png 2x">
+                  <source type="image/webp"
+                          srcset="img/cat-fat-mobile@1x.webp 1x,
+                                  img/cat-fat-mobile@2x.webp 2x">
+                  <img class="slider__image slider__image--before"
+                        src="img/cat-fat-mobile@1x.png"
+                        srcset="img/cat-fat-mobile@2x.png 2x"
+                        alt="Толстый кот"
+                        width="311" height="232">
+                </picture>
               </div>
 
-              <div class="slider__separator-container">
-                <div class="slider__image-wrapper">
-                  <img class="slider__image slider__image--after" src="img/after-mobile.png" alt="Худой кот"
-                        width="251" height="240">
-                </div>
-              </div>
+              <picture class="top-section__picture">
+                <source media="(min-width: 768px)"
+                        type="image/webp"
+                        srcset="img/cat-skinny-tablet@1x.webp 1x,
+                                img/cat-skinny-tablet@2x.webp 2x">
+                <source media="(min-width: 768px)"
+                        srcset="img/cat-skinny-tablet@1x.png 1x,
+                                img/cat-skinny-tablet@2x.png 2x">
+                <source type="image/webp"
+                        srcset="img/cat-skinny-mobile@1x.webp 1x,
+                                img/cat-skinny-mobile@2x.webp 2x">
+                <img class="slider__image slider__image--after"
+                      src="img/cat-skinny-mobile@1x.png"
+                      srcset="img/cat-skinny-mobile@2x.png 2x"
+                      alt="Худой кот"
+                      width="251" height="240">
+              </picture>
             </div>
 
             <div class="slider__controls">
               <button class="slider__button slider__button--before" type="button">Было</button>
-              <input class="slider__range" type="range" min="0" max="100" value="0">
+              <input class="slider__range" type="range" min="0" max="100">
               <div class="slider__toggle"></div>
               <button class="slider__button slider__button--after" type="button">Стало</button>
             </div>
@@ -171,7 +209,10 @@
         </div>
       </section>
 
-      <section class="section contacts">
+    </main>
+
+    <footer class="footer">
+      <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
 
         <div class="contacts__container">
@@ -187,9 +228,7 @@
         <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4781.472166688085!2d30.31912363523219!3d59.938158525078215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1619117714545!5m2!1sru!2sru"
                 aria-hidden="true" width="320" height="362" loading="lazy"></iframe>
       </section>
-    </main>
 
-    <footer class="footer">
       <div class="container footer__container">
         <a class="footer__link-logo">
           <svg class="footer__logo" width="128" height="24" aria-label="Логотип Cat Energy">

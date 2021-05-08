@@ -29,12 +29,12 @@
     background-position: center right, top center;
     background-repeat: no-repeat, no-repeat;
     background-size: 720px 694px, 100% 100%;
-  }
 
-  @media (min-width: $desktop-width) and (min-resolution: 2dppx) {
-    background-image:
-      url("../img/backgrounds/background-top-desktop@2x.png"),
-      linear-gradient(to left, var(--accent-color-background), var(--accent-color-background) 50%, var(--light-backgound-color) 50%, var(--light-backgound-color));
+    @media (min-resolution: 2dppx) {
+      background-image:
+        url("../img/backgrounds/background-top-desktop@2x.png"),
+        linear-gradient(to left, var(--accent-color-background), var(--accent-color-background) 50%, var(--light-backgound-color) 50%, var(--light-backgound-color));
+    }
   }
 }
 

@@ -6,7 +6,7 @@
   background-color: var(--dark-background-color);
 
   @media (min-width: $tablet-width) {
-    padding: 77px 315px 62px 53px;
+    padding: 77px 280px 62px 53px;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,6 +19,16 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  &--weight-gain {
+    @media (min-width: $tablet-width) {
+      padding-right: 315px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 51px;
+    }
   }
 
   &--weight-gain::before {
@@ -68,7 +78,6 @@
       height: 106px;
     }
   }
-
 }
 
 .goal__title {
@@ -117,16 +126,33 @@
 }
 
 .goal__link {
-  padding-right: 40px;
+  display: flex;
+  align-items: center;
   color: var(--contrast-dark-text-color);
   text-transform: uppercase;
-  background-image: url("../img/backgrounds/arrow.svg");
-  background-position: center right;
-  background-size: 24px 12px;
-  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    padding-right: 48px;
     font-size: 20px;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  span {
+    margin-right: 15px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 24px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 27px;
+    }
+  }
+}
+
+.goal__link-icon {
+  fill: var(--contrast-dark-text-color);
+  stroke: var(--contrast-dark-text-color);
 }
