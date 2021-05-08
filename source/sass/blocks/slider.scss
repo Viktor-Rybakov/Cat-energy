@@ -50,7 +50,7 @@
     width: 311px;
     height: 232px;
     top: 3px;
-    left: 0px;
+    left: 0;
 
     @media (min-width: $tablet-width) {
       width: 674px;
@@ -138,6 +138,7 @@
     display: none;
   }
 
+  /* stylelint-disable-next-line property-no-vendor-prefix */
   -webkit-appearance: none;
   width: 428px;
   margin-left: 22px;
@@ -149,6 +150,7 @@
   }
 
   &::-webkit-slider-thumb {
+    /* stylelint-disable-next-line property-no-vendor-prefix */
     -webkit-appearance: none;
     width: 34px;
     height: 34px;
