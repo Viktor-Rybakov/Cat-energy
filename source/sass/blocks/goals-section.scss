@@ -2,6 +2,14 @@
 
 .goals-section {
   padding-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 83px;
+  }
 }
 
 .goals-section__list {
@@ -15,8 +23,18 @@
 }
 
 .goals-section__item {
+  @media (min-width: $desktop-width) {
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+
   &:not(:last-of-type) {
     margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 30px;
+    }
 
     @media (min-width: $desktop-width) {
       margin-bottom: 0;

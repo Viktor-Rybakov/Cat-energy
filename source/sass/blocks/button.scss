@@ -1,11 +1,25 @@
 // Button
 
 .button {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
   font-size: 16px;
   line-height: 20px;
   color: var(--contrast-light-text-color);
   text-align: center;
   text-transform: uppercase;
   background-color: var(--accent-color);
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover,
+  &:active {
+    background-color: var(--accent-color-2);
+  }
+
+  &:active span {
+    opacity: 0.3;
+  }
 }

@@ -5,40 +5,45 @@
     <title>HTML Academy: Кэт энерджи</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
-    <header class="header container">
-      <a class="header__logo logo" href="/">
-        <svg class="logo__img"></svg>
-        <svg class="logo__name"></svg>
-      </a>
+    <header class="header">
+      <nav class="header__navigation container navigation navigation--no-js">
+          <a class="navigation__logo logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="logo__img" src="img/logo-mobile.svg" width="192" height="37" alt="Логотип Cat Energy">
+            </picture>
+          </a>
 
-      <nav class="header__navigation navigation">
-        <button class="navigation__menu-button menu-button" type="button"
-                aria-label="Открыть меню" aria-controls="menu" aria-expanded="false">
-          <svg class="menu-button__icon"></svg>
-        </button>
+          <button class="navigation__menu-button" type="button">
+            <svg class="navigation__menu-button-icon">
+              <use class="navigation__menu-button-symbol navigation__menu-button-symbol--opened" xlink:href="img/sprite.svg#menu-opened"></use>
+              <use class="navigation__menu-button-symbol navigation__menu-button-symbol--closed" xlink:href="img/sprite.svg#menu-closed"></use>
+            </svg>
+          </button>
 
-        <ul id="menu" class="navigation__menu main-menu">
+        <ul class="navigation__menu main-menu">
           <li class="main-menu__item">
-            <a class="main-menu__link" href="/">Главная</a>
+            <a class="main-menu__link link" href="index.html">Главная</a>
           </li>
 
           <li class="main-menu__item">
-            <a class="main-menu__link" href="catalog.html">Каталог продукции</a>
+            <a class="main-menu__link link" href="catalog.html">Каталог продукции</a>
           </li>
 
           <li class="main-menu__item main-menu__item--current">
-            <a class="main-menu__link">Подбор программы</a>
+            <a class="main-menu__link link">Подбор программы</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main class="main">
+    <main class="page__main">
       <section class="section form-section">
         <div class="form-section__container">
           <h1 class="section__main-title">Подбор программы</h1>
@@ -172,59 +177,71 @@
           </div>
         </form>
       </section>
-
-      <section class="section contacts">
-        <h2 class="visually-hidden">Наши контакты</h2>
-
-        <div class="contacts__container">
-          <div class="contacts__address-container">
-            <p class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</p>
-            <address class="contacts__address-wrapper">
-              <span class="contacts__address">ул. Большая Конюшенная, д. 19/8</span>
-              <span class="contacts__city">Санкт-Петербург</span>
-            </address>
-          </div>
-        </div>
-
-        <iframe class="contacts__map"></iframe>
-      </section>
     </main>
 
     <footer class="footer">
-      <a class="footer__link logo" href="/" aria-label="Cat Energy">
-        <svg class="logo__name"></svg>
-      </a>
+      <section class="contacts">
+        <h2 class="visually-hidden">Наши контакты</h2>
 
-      <ul class="footer__socials socials">
-        <li class="socials__item">
-          <a class="socials__link" href="https://vk.com" aria-label="Ссылка на Вконтакте"
-              target="_blank" rel="noopener noreferrer nofollow">
-            <svg class="socials__icon" width="23" height="16"></svg>
-          </a>
-        </li>
+        <div class="contacts__address-container">
+          <p class="contacts__slogan">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <address class="contacts__address-wrapper">
+            <span class="contacts__address">ул. Большая Конюшенная, д. 19/8</span>
+            <span class="contacts__city">Санкт-Петербург</span>
+          </address>
+        </div>
 
-        <li class="socials__item">
-          <a class="socials__link" href="https://www.instagram.com" aria-label="Ссылка на Instagram"
-              target="_blank" rel="noopener noreferrer nofollow">
-            <svg class="socials__icon" width="16" height="16"></svg>
-          </a>
-        </li>
+        <div class="contacts__map" id="map"></div>
+      </section>
 
-        <li class="socials__item">
-          <a class="socials__link" href="https://facebook.com" aria-label="Ссылка на Facebook"
-              target="_blank" rel="noopener noreferrer nofollow">
-            <svg class="socials__icon" width="22" height="22"></svg>
-          </a>
-        </li>
-      </ul>
+      <div class="container footer__container">
+        <a class="footer__link-logo" href="index.html">
+          <svg class="footer__logo" width="128" height="24" aria-label="Логотип Cat Energy">
+            <use xlink:href="img/sprite.svg#footer-logo"></use>
+          </svg>
+        </a>
 
-      <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive"
-          target="_blank" rel="noopener noreferrer">
-        <span class="footer__link-text">HTML Academy</span>
+        <ul class="footer__socials socials">
+          <li class="socials__item">
+            <a class="socials__link" href="https://vk.com" aria-label="Ссылка на Вконтакте"
+                target="_blank" rel="noopener noreferrer nofollow">
+              <svg class="socials__icon socials__icon--vk" width="23" height="16">
+                <use xlink:href="img/sprite.svg#vk-icon"></use>
+              </svg>
+            </a>
+          </li>
 
-        <img class="footer__link-img" src="img/htmlacademy.svg"
-              alt="" width="27" height="34" aria-hidden="true">
-      </a>
+          <li class="socials__item">
+            <a class="socials__link" href="https://www.instagram.com" aria-label="Ссылка на Instagram"
+                target="_blank" rel="noopener noreferrer nofollow">
+              <svg class="socials__icon socials__icon--instagram" width="16" height="16">
+                <use xlink:href="img/sprite.svg#instagram-icon"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="socials__item">
+            <a class="socials__link" href="https://facebook.com" aria-label="Ссылка на Facebook"
+                target="_blank" rel="noopener noreferrer nofollow">
+              <svg class="socials__icon socials__icon--facebook" width="22" height="22">
+                <use xlink:href="img/sprite.svg#facebook-icon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <a class="footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive"
+            target="_blank" rel="noopener noreferrer">
+          <span class="footer__academy-text">HTML Academy</span>
+
+          <svg class="footer__academy-logo" width="27" height="34">
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
     </footer>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=bf4c24df-0bfa-43a3-b392-61ac4559fc83&lang=ru_RU"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

@@ -1,16 +1,61 @@
-/* stylelint-disable block-no-empty */
 // Results
 
 .results {
+  position: relative;
   padding-top: 27px;
-  padding-bottom: 25px;
+  padding-bottom: 36px;
   background-color: var(--darker-background-color);
+
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+    padding-bottom: 0;
+    background-color: var(--light-background-color);
+    border-top: 1px solid var(--menu-border-color);
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 462px;
+      background-color: var(--darker-background-color);
+    }
+
+    @media (min-width: $desktop-width) {
+      &::before {
+        background-size: 100% 100%;
+        background-image: linear-gradient(to right, var(--dark-background-color), var(--dark-background-color) calc(50% + 200px), var(--darker-background-color) calc(50% + 200px));
+      }
+
+      &--before::before {
+        background-color: var(--dark-background-color);
+        background-image: none;
+      }
+
+      &--after::before {
+        background-color: var(--darker-background-color);
+        background-image: none;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    border-top: none;
+  }
 }
 
 .results__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 436px 656px;
+    grid-auto-rows: min-content min-content 1fr;
+    justify-content: space-between;
     grid-template-areas:
       "title slider"
       "description slider"
@@ -21,6 +66,15 @@
 .results__title {
   grid-area: title;
   margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 58px;
+    margin-bottom: 147px;
+  }
 }
 
 .results__description {
@@ -30,37 +84,75 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 68px;
+  }
 }
 
 .results__list {
   grid-area: list;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, max-content);
+  justify-content: center;
+  gap: 35px 30px;
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, max-content) 1fr;
+    gap: 42px;
+    margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, max-content);
+    grid-template-rows: min-content 1fr;
+    justify-self: flex-start;
+    row-gap: 59px;
+    margin-bottom: 0;
   }
 }
 
 .results__item {
-  font-family: "Arial", sans-serif;
-  font-size: 12px;
-  line-height: 12px;
-  text-align: center;
-  text-transform: lowercase;
+  &--bordered {
+    position: relative;
+    grid-column: span 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 124px;
+    height: 56px;
+    border: 1px solid var(--results-border-color);
+    border-radius: 3px;
 
-  &--cost {
-    font-family: "Oswald", sans-serif;
-    font-size: 14px;
-    line-height: 20px;
-    color: var(--contrast-dark-text-color);
-    text-transform: uppercase;
+    @media (min-width: $tablet-width) {
+      width: 162px;
+      height: 72px;
+    }
+  }
+
+  &--clean {
+    grid-column: span 2;
+    text-align: center;
+    border: none;
+
+    @media (min-width: $tablet-width) {
+      grid-column: span 1;
+      padding-top: 11px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: span 2;
+      display: flex;
+      padding-top: 0;
+    }
   }
 }
 
@@ -71,32 +163,99 @@
   text-align: center;
   text-transform: uppercase;
 
-  &--cost {
-    font-size: 14px;
-    line-height: 20px;
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
   }
 }
 
-.results__item-wrapper {
-  grid-column: span 1;
-  display: flex;
-  flex-direction: column-reverse;
+.results__item--bordered .results__name {
+  position: absolute;
+  bottom: -16px;
+  max-width: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  text-transform: lowercase;
+  background-color: var(--darker-background-color);
 
-  &--clean {
-    grid-column: span 2;
-    flex-direction: row;
-    justify-content: center;
+  @media (min-width: $tablet-width) {
+    max-width: 194px;
+    bottom: -5px;
+    font-size: 14px;
+    line-height: 1;
+    background-color: var(--light-background-color);
+  }
 
-    @media (min-width: $tablet-width) {
-      grid-column: span 1;
-    }
+  @media (min-width: $desktop-width) {
+    background-color: var(--dark-background-color);
+  }
+}
 
-    @media (min-width: $desktop-width) {
-      grid-column: span 2;
-    }
+.results--before .results__name {
+  @media (min-width: $desktop-width) {
+    background-color: var(--dark-background-color);
+  }
+}
+
+.results--after .results__name {
+  @media (min-width: $desktop-width) {
+    background-color: var(--darker-background-color);
+  }
+}
+
+.results__item--clean .results__name {
+  display: inline-block;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--contrast-dark-text-color);
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    margin-right: 64px;
+  }
+}
+
+.results__item--clean .results__value {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    font-size: 20px;
+    text-align: right;
   }
 }
 
 .results__slider {
   grid-area: slider;
+  align-self: center;
+  margin-left: -20px;
+  margin-right: -20px;
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 16px;
+    margin-right: 0;
+  }
 }

@@ -2,34 +2,46 @@
 
   //Basic colors
 
-  --basic-green: #68b738; //+
+  --basic-green: #68b738;
   --basic-green-2: #5eaa2f;
-  --basic-grey: #f2f2f2; //+
-  --basic-black: #000000; //+
-  --basic-white: #ffffff; //+
+  --basic-green-bg: #63a63a;
+  --basic-grey: #f2f2f2;
+  --basic-black: #000000;
+  --basic-white: #ffffff;
 
   //Special colors
 
-  --special-black: #111111; //+
+  --special-black: #111111;
   --special-grey: #cdcdcd;
-  --special-grey-2: #eaeaea; //+
+  --special-grey-2: #eaeaea;
   --special-grey-3: #d9d9d9;
   --special-grey-4: #e6e6e6;
-  --special-dark-grey: #444444; //+
+  --special-dark-grey: #444444;
   --special-dark-grey-2: #666666;
-  --special-dark-grey-3: #222222; //+
+  --special-dark-grey-3: #222222;
+  --special-dark-grey-4: #3e3e3e;
+  --special-dark-grey-5: #6b6b6b;
 
   // Variables
 
-  --primary-text-color: var(--special-dark-grey); //+
-  --contrast-dark-text-color: var(--basic-black); //+
-  --contrast-dark-text-color-2: var(--special-black); //+
-  --contrast-dark-text-color-3: var(--special-dark-grey-3); //+
-  --contrast-light-text-color: var(--basic-white); //+
+  --primary-text-color: var(--special-dark-grey);
+  --contrast-dark-text-color: var(--basic-black);
+  --contrast-dark-text-color-2: var(--special-black);
+  --contrast-dark-text-color-3: var(--special-dark-grey-3);
+  --contrast-light-text-color: var(--basic-white);
 
-  --light-backgound-color: var(--basic-white); //+
-  --dark-background-color: var(--basic-grey); //+
-  --darker-background-color: var(--special-grey-2); //+
+  --light-background-color: var(--basic-white);
+  --dark-background-color: var(--basic-grey);
+  --darker-background-color: var(--special-grey-2);
 
-  --accent-color: var(--basic-green); //+
+  --accent-color: var(--basic-green);
+  --accent-color-2: var(--basic-green-2);
+  --icons-color: var(--special-dark-grey-2);
+  --line-color: var(--special-grey-3);
+  --menu-border-color: var(--special-grey-4);
+  --results-border-color: var(--special-grey);
+  --accent-color-background: var(--basic-green-bg);
+  --footer-logo: var(--special-black);
+  --footer-logo-hover: var(--special-dark-grey-4);
+  --footer-logo-active: var(--special-dark-grey-5);
 }
