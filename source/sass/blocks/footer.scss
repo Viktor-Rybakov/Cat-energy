@@ -26,6 +26,14 @@
     padding-top: 0;
     padding-bottom: 0;
   }
+
+  &:hover .footer__logo {
+    fill: var(--footer-logo-hover);
+  }
+
+  &:active .footer__logo {
+    fill: var(--footer-logo-active);
+  }
 }
 
 .footer__logo {
@@ -35,14 +43,6 @@
   margin-left: auto;
   margin-right: auto;
   fill: var(--footer-logo);
-
-  &:hover .footer__logo {
-    fill: var(--footer-logo-hover);
-  }
-
-  &:active .footer__logo {
-    fill: var(--footer-logo-active);
-  }
 }
 
 .footer__socials {

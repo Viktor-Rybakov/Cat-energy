@@ -135,6 +135,17 @@
     font-size: 20px;
   }
 
+  &:hover,
+  &:active {
+    .goal__icon-arrow {
+      display: none;
+    }
+
+    .goal__icon-arrow-long {
+      display: block;
+    }
+  }
+
   &:active {
     opacity: 0.3;
   }
@@ -155,4 +166,8 @@
 .goal__link-icon {
   fill: var(--contrast-dark-text-color);
   stroke: var(--contrast-dark-text-color);
+}
+
+.goal__icon-arrow-long {
+  display: none;
 }

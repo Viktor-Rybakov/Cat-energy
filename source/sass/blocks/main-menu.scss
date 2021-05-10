@@ -35,7 +35,6 @@
 
       @media (min-width: $desktop-width) {
         bottom: -13px;
-        background-color: var(--light-background-color);
       }
     }
   }
@@ -64,6 +63,17 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 1;
+  }
+}
+
+.main-menu--main-page .main-menu__item--current::after {
+  @media (min-width: $desktop-width) {
+    background-color: var(--light-background-color);
+  }
+}
+
+.main-menu--main-page .main-menu__link {
+  @media (min-width: $desktop-width) {
     color: var(--contrast-light-text-color);
   }
 }

@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const sliderToggle = slider.querySelector('.slider__toggle');
   const sliderImageWrapper = slider.querySelector('.slider__image-wrapper');
   const sliderRange = slider.querySelector('.slider__range');
+  const section = document.querySelector('.results');
 
   if (window.matchMedia("(max-width: 767px)").matches) {
     setMobileSlider();
@@ -59,6 +60,8 @@ document.addEventListener('DOMContentLoaded', () => {
     sliderRange.oninput = () => {
       let wrapperWidth = (sliderWidth - rangeWidth) / 2 + (rangeWidth) * sliderRange.value / 100;
       sliderImageWrapper.style.width = `${wrapperWidth}px`;
+      section.classList.remove('results--before');
+      section.classList.remove('results--after');
     };
 
     sliderButtonBefore.onclick = (evt) => {
@@ -66,6 +69,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
       sliderRange.value = '0';
       sliderImageWrapper.style.width = '100%';
+      section.classList.add('results--before');
+      section.classList.remove('results--after');
     };
 
     sliderButtonAfter.onclick = (evt) => {
@@ -73,6 +78,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
       sliderRange.value = '100';
       sliderImageWrapper.style.width = '0%';
+      section.classList.remove('results--before');
+      section.classList.add('results--after');
     };
   }
 });

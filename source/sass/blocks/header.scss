@@ -10,7 +10,10 @@
 
   @media (min-width: $desktop-width) {
     height: 112px;
-    margin-bottom: -112px;
+
+    &--main-page {
+      margin-bottom: -112px;
+    }
   }
 }
 

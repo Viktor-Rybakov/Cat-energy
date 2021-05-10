@@ -10,8 +10,8 @@
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
-    <header class="header">
-      <nav class="header__navigation container navigation navigation--no-js">
+    <header class="header header--main-page">
+      <nav class="header__navigation container navigation navigation navigation--no-js">
           <a class="navigation__logo logo">
             <picture>
               <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
@@ -27,7 +27,7 @@
             </svg>
           </button>
 
-        <ul class="navigation__menu main-menu">
+        <ul class="navigation__menu main-menu main-menu--main-page">
           <li class="main-menu__item main-menu__item--current">
             <a class="main-menu__link link">Главная</a>
           </li>
@@ -96,7 +96,8 @@
                 <span>Каталог slim</span>
 
                 <svg class="goal__link-icon" width="32" height="12" aria-hidden="true">
-                  <use xlink:href="img/sprite.svg#arrow"></use>
+                  <use class="goal__icon-arrow" xlink:href="img/sprite.svg#arrow"></use>
+                  <use class="goal__icon-arrow-long" xlink:href="img/sprite.svg#arrow-long"></use>
                 </svg>
               </a>
             </article>
@@ -113,7 +114,8 @@
                 <span>Каталог pro</span>
 
                 <svg class="goal__link-icon" width="32" height="12" aria-hidden="true">
-                  <use xlink:href="img/sprite.svg#arrow"></use>
+                  <use class="goal__icon-arrow" xlink:href="img/sprite.svg#arrow"></use>
+                  <use class="goal__icon-arrow-long" xlink:href="img/sprite.svg#arrow-long"></use>
                 </svg>
               </a>
             </article>
@@ -161,7 +163,7 @@
           <div class="results__slider slider">
             <div class="slider__container">
               <div class="slider__image-wrapper">
-                <picture class="top-section__picture">
+                <picture>
                   <source media="(min-width: 768px)"
                           type="image/webp"
                           srcset="img/cat-fat-tablet@1x.webp 1x,
@@ -180,7 +182,7 @@
                 </picture>
               </div>
 
-              <picture class="top-section__picture">
+              <picture>
                 <source media="(min-width: 768px)"
                         type="image/webp"
                         srcset="img/cat-skinny-tablet@1x.webp 1x,
@@ -208,25 +210,21 @@
           </div>
         </div>
       </section>
-
     </main>
 
     <footer class="footer">
-      <section class="contacts">
+      <section class="contacts contacts--main-page">
         <h2 class="visually-hidden">Наши контакты</h2>
 
-        <div class="contacts__container">
-          <div class="contacts__address-container contacts__address-container--main">
-            <p class="contacts__slogan">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
-            <address class="contacts__address-wrapper">
-              <span class="contacts__address">ул. Большая Конюшенная, д. 19/8</span>
-              <span class="contacts__city">Санкт-Петербург</span>
-            </address>
-          </div>
+        <div class="contacts__address-container">
+          <p class="contacts__slogan">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <address class="contacts__address-wrapper">
+            <span class="contacts__address">ул. Большая Конюшенная, д. 19/8</span>
+            <span class="contacts__city">Санкт-Петербург</span>
+          </address>
         </div>
 
-        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4781.472166688085!2d30.31912363523219!3d59.938158525078215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1619117714545!5m2!1sru!2sru"
-                aria-hidden="true" width="320" height="362" loading="lazy"></iframe>
+        <div class="contacts__map" id="map"></div>
       </section>
 
       <div class="container footer__container">
@@ -276,6 +274,7 @@
       </div>
     </footer>
 
-    <script src="js/script.min.js" defer></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=bf4c24df-0bfa-43a3-b392-61ac4559fc83&lang=ru_RU"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
