@@ -135,39 +135,54 @@
     font-size: 20px;
   }
 
-  &:hover,
-  &:active {
-    .goal__icon-arrow {
-      display: none;
-    }
-
-    .goal__icon-arrow-long {
-      display: block;
-    }
-  }
-
   &:active {
     opacity: 0.3;
   }
+}
 
-  span {
-    margin-right: 15px;
+.goal__link-text {
+  margin-right: 15px;
 
-    @media (min-width: $tablet-width) {
-      margin-right: 24px;
-    }
+  @media (min-width: $tablet-width) {
+    margin-right: 24px;
+  }
 
-    @media (min-width: $desktop-width) {
-      margin-right: 27px;
-    }
+  @media (min-width: $desktop-width) {
+    margin-right: 27px;
+  }
+}
+
+.goal__link-icon-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    display: block;
+    width: 18px;
+    height: 2px;
+    background-color: var(--contrast-dark-text-color);
+    transition: 0.2s;
   }
 }
 
 .goal__link-icon {
   fill: var(--contrast-dark-text-color);
-  stroke: var(--contrast-dark-text-color);
+  transform: translateX(16px);
+  transition: 0.2s;
 }
 
-.goal__icon-arrow-long {
-  display: none;
+.goal__link:hover {
+  .goal__link-icon {
+    transform: translateX(24px);
+  }
+
+  .goal__link-icon-wrapper::before {
+    width: 26px;
+  }
 }
