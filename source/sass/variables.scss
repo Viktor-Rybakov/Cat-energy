@@ -8,6 +8,7 @@
   --basic-grey: #f2f2f2;
   --basic-black: #000000;
   --basic-white: #ffffff;
+  --basic-error: #ff8282;
 
   //Special colors
 
@@ -16,6 +17,8 @@
   --special-grey-2: #eaeaea;
   --special-grey-3: #d9d9d9;
   --special-grey-4: #e6e6e6;
+  --special-grey-5: #e7e7e7;
+  --special-grey-6: #bababa;
   --special-dark-grey: #444444;
   --special-dark-grey-2: #666666;
   --special-dark-grey-3: #222222;
@@ -36,12 +39,15 @@
 
   --accent-color: var(--basic-green);
   --accent-color-2: var(--basic-green-2);
+  --error-color: var(--basic-error);
   --icons-color: var(--special-dark-grey-2);
   --line-color: var(--special-grey-3);
+  --input-border: var(--special-grey-4);
   --menu-border-color: var(--special-grey-4);
   --results-border-color: var(--special-grey);
   --accent-color-background: var(--basic-green-bg);
   --footer-logo: var(--special-black);
   --footer-logo-hover: var(--special-dark-grey-4);
   --footer-logo-active: var(--special-dark-grey-5);
+  --checkbox-border-hover: var(--special-grey-6);
 }

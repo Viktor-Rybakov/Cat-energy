@@ -1,35 +1,51 @@
-/* stylelint-disable block-no-empty */
 // Form-section
 
 .form-section {
-
-}
-
-.form-section__container {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 24px;
+  padding-bottom: 18px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 70px;
-    padding-right: 68px;
+    padding-top: 66px;
+    padding-bottom: 72px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0;
-    padding-right: 0;
+    padding-top: 76px;
+    padding-bottom: 83px;
+  }
+}
+
+.form-section__title {
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
   }
 }
 
 .form-section__description {
+  max-width: 230px;
+  margin: 0;
   font-size: 14px;
   line-height: 18px;
   color: var(--contrast-dark-text-color);
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    max-width: 330px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form-section__form {
+  margin-top: 39px;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 64px;
+  }
 }
