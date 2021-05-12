@@ -11,6 +11,11 @@
   @media (min-width: $tablet-width) {
     padding-left: 30px;
     padding-right: 30px;
+
+    &--form {
+      padding-left: 70px;
+      padding-right: 70px;
+    }
   }
 
   @media (min-width: $desktop-width) {
