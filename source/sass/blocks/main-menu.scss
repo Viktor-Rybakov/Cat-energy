@@ -74,5 +74,10 @@
 .main-menu--main-page .main-menu__link {
   @media (min-width: $desktop-width) {
     color: var(--contrast-light-text-color);
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px var(--contrast-light-text-color);
+    }
   }
 }
