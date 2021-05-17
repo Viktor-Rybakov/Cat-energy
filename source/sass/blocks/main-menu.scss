@@ -15,7 +15,7 @@
 }
 
 .main-menu__item {
-  border-bottom: 1px solid var(--menu-border-color);
+  border-bottom: 1px solid var(--line-color-2);
 
   @media (min-width: $tablet-width) {
     position: relative;

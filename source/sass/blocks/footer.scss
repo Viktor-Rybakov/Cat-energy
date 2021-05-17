@@ -20,12 +20,14 @@
 
 .footer__link-logo {
   display: block;
-  padding-top: 36px;
-  padding-bottom: 31px;
+  margin-top: 36px;
+  margin-bottom: 31px;
+  border-radius: 2px;
+  transition: 0.2s;
 
   @media (min-width: $tablet-width) {
-    padding-top: 0;
-    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   &:hover .footer__logo {
@@ -34,6 +36,11 @@
 
   &:active .footer__logo {
     fill: var(--footer-logo-active);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--accent-color);
   }
 }
 
@@ -65,16 +72,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 22px;
-  padding-bottom: 20px;
+  margin-top: 22px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  transition: 0.2s;
 
   @media (min-width: $tablet-width) {
-    padding-top: 0;
-    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   &:active {
     opacity: 0.3;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--accent-color);
   }
 }
 

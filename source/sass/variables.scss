@@ -3,8 +3,6 @@
   //Basic colors
 
   --basic-green: #68b738;
-  --basic-green-2: #5eaa2f;
-  --basic-green-bg: #63a63a;
   --basic-grey: #f2f2f2;
   --basic-black: #000000;
   --basic-white: #ffffff;
@@ -12,42 +10,53 @@
 
   //Special colors
 
+  --special-green: #5eaa2f;
+  --special-green-2: #63a63a;
   --special-black: #111111;
+  --special-black-2: #222222;
   --special-grey: #cdcdcd;
   --special-grey-2: #eaeaea;
   --special-grey-3: #d9d9d9;
   --special-grey-4: #e6e6e6;
-  --special-grey-5: #e7e7e7;
-  --special-grey-6: #bababa;
+  --special-grey-5: #bababa;
+  --special-grey-6: #ebebeb;
+  --special-grey-7: #d3d3d3;
   --special-dark-grey: #444444;
   --special-dark-grey-2: #666666;
-  --special-dark-grey-3: #222222;
-  --special-dark-grey-4: #3e3e3e;
-  --special-dark-grey-5: #6b6b6b;
+  --special-dark-grey-3: #3e3e3e;
+  --special-dark-grey-4: #6b6b6b;
 
   // Variables
 
   --primary-text-color: var(--special-dark-grey);
   --contrast-dark-text-color: var(--basic-black);
   --contrast-dark-text-color-2: var(--special-black);
-  --contrast-dark-text-color-3: var(--special-dark-grey-3);
+  --contrast-dark-text-color-3: var(--special-black-2);
+  --contrast-dark-text-color-4: var(--basic-grey);
   --contrast-light-text-color: var(--basic-white);
 
   --light-background-color: var(--basic-white);
   --dark-background-color: var(--basic-grey);
+  --dark-background-color-2: var(--special-grey-6);
   --darker-background-color: var(--special-grey-2);
 
   --accent-color: var(--basic-green);
-  --accent-color-2: var(--basic-green-2);
+  --accent-color-hover: var(--special-green);
+  --accent-color-background: var(--special-green-2);
   --error-color: var(--basic-error);
+
   --icons-color: var(--special-dark-grey-2);
   --line-color: var(--special-grey-3);
-  --input-border: var(--special-grey-4);
-  --menu-border-color: var(--special-grey-4);
-  --results-border-color: var(--special-grey);
-  --accent-color-background: var(--basic-green-bg);
+  --line-color-2: var(--special-grey-4);
+  --line-color-3: var(--special-grey);
+  --line-color-4: var(--special-grey-6);
+  --line-color-5: var(--special-grey-7);
+
   --footer-logo: var(--special-black);
-  --footer-logo-hover: var(--special-dark-grey-4);
-  --footer-logo-active: var(--special-dark-grey-5);
-  --checkbox-border-hover: var(--special-grey-6);
+  --footer-logo-hover: var(--special-dark-grey-3);
+  --footer-logo-active: var(--special-dark-grey-4);
+
+  --input-border: var(--special-grey-4);
+  --input-border-focus: var(--special-dark-grey);
+  --checkbox-border-hover: var(--special-grey-5);
 }

@@ -4,6 +4,7 @@
   display: block;
   transition: 0.2s;
   cursor: pointer;
+  border-radius: 2px;
 
   &:hover {
     opacity: 0.8;
@@ -11,6 +12,11 @@
 
   &:active {
     opacity: 0.6;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--light-background-color), 0 0 0 4px var(--accent-color);
   }
 }
 

@@ -2,6 +2,7 @@
 
 .goal {
   position: relative;
+  height: 100%;
   padding: 31px 20px 22px;
   background-color: var(--dark-background-color);
 
@@ -130,6 +131,7 @@
   align-items: center;
   color: var(--contrast-dark-text-color);
   text-transform: uppercase;
+  transition: 0.2s;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -137,6 +139,11 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--accent-color);
   }
 }
 

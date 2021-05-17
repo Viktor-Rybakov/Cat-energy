@@ -18,10 +18,25 @@
 
   &:hover,
   &:active {
-    background-color: var(--accent-color-2);
+    background-color: var(--accent-color-hover);
   }
 
   &:active span {
     opacity: 0.3;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--light-background-color), 0 0 0 4px var(--accent-color);
+  }
+
+  &--secondary {
+    color: var(--primary-text-color);
+    background-color: var(--dark-background-color);
+
+    &:hover,
+    &:active {
+      background-color: var(--dark-background-color-2);
+    }
   }
 }
