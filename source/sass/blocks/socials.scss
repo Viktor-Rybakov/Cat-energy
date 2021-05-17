@@ -61,6 +61,8 @@
   justify-content: center;
   width: 44px;
   height: 44px;
+  border-radius: 2px;
+  transition: 0.2s;
 
   &:hover,
   &:active {
@@ -75,5 +77,10 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--accent-color);
   }
 }

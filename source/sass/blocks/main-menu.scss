@@ -15,10 +15,16 @@
 }
 
 .main-menu__item {
-  border-bottom: 1px solid var(--menu-border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 66px;
+  border-bottom: 1px solid var(--line-color-2);
 
   @media (min-width: $tablet-width) {
     position: relative;
+    display: block;
+    min-height: auto;
     border-bottom: none;
 
     &:not(:last-of-type) {
@@ -42,17 +48,11 @@
 }
 
 .main-menu__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 66px;
   font-size: 20px;
   font-weight: 500;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    display: block;
-    min-height: auto;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
@@ -67,12 +67,17 @@
 
 .main-menu--main-page .main-menu__item--current::after {
   @media (min-width: $desktop-width) {
-    background-color: var(--light-background-color);
+    background-color: var(--contrast-light-text-color);
   }
 }
 
 .main-menu--main-page .main-menu__link {
   @media (min-width: $desktop-width) {
     color: var(--contrast-light-text-color);
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px var(--contrast-light-text-color);
+    }
   }
 }

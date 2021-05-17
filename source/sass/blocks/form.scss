@@ -146,8 +146,9 @@
       width: 30px;
       height: 30px;
       border-radius: 50%;
-      border: 1px solid var(--results-border-color);
+      border: 1px solid var(--line-color-3);
       background-color: var(--light-background-color);
+      transition: 0.2s;
 
       @media (min-width: $tablet-width) {
         width: 40px;
@@ -180,8 +181,9 @@
       transform: translateY(-50%);
       width: 30px;
       height: 30px;
-      border: 1px solid var(--results-border-color);
+      border: 1px solid var(--line-color-3);
       background-color: var(--light-background-color);
+      transition: 0.2s;
 
       @media (min-width: $tablet-width) {
         width: 40px;
@@ -213,6 +215,11 @@
   }
 }
 
+.form__radio:focus + .form__label--radio::before {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--light-background-color), 0 0 0 4px var(--accent-color);
+}
+
 .form__checkbox:checked + .form__label--checkbox::after {
   position: absolute;
   content: "";
@@ -228,6 +235,11 @@
   @media (min-width: $tablet-width) {
     left: 11px;
   }
+}
+
+.form__checkbox:focus + .form__label--checkbox::before {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--light-background-color), 0 0 0 4px var(--accent-color);
 }
 
 .form__radio:disabled + .form__label--radio,
@@ -274,13 +286,13 @@
   }
 
   &:hover {
-    border-color: var(--results-border-color);
+    border-color: var(--line-color-3);
   }
 
   &:focus {
     outline: none;
-    border-color: var(--primary-text-color);
-    box-shadow: inset 0 0 0 1px var(--primary-text-color);
+    border-color: var(--input-border-focus);
+    box-shadow: inset 0 0 0 1px var(--input-border-focus);
 
     & + .form__field-icon--email {
       stroke: var(--accent-color);

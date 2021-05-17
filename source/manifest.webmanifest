@@ -1,0 +1,9 @@
+{
+  "icons": [
+    { "src": "./img/favicons/icon-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "./img/favicons/icon-512.png", "type": "image/png", "sizes": "512x512" }
+  ],
+  "background_color": "#ffffff",
+  "theme_color": "#68b738",
+  "display": "fullscreen"
+}

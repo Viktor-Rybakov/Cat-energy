@@ -1,6 +1,7 @@
 // Header
 
 .header {
+  min-width: 0;
   background-color: var(--light-background-color);
 
   @media (min-width: $tablet-width) {

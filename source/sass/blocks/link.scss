@@ -4,6 +4,7 @@
   color: var(--contrast-dark-text-color);
   text-transform: uppercase;
   cursor: pointer;
+  border-radius: 2px;
   transition: 0.2s;
 
   &:hover {
@@ -12,5 +13,10 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--accent-color);
   }
 }

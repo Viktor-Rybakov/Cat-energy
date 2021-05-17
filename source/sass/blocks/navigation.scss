@@ -6,7 +6,7 @@
   grid-template-columns: max-content 1fr;
   grid-template-rows: 66px;
   align-items: center;
-  border-bottom: 1px solid var(--menu-border-color);
+  border-bottom: 1px solid var(--line-color-2);
 
   &--main-page {
     border-bottom: 1px solid transparent;
@@ -50,7 +50,13 @@
     padding: 0;
     background-color: transparent;
     border: none;
+    border-radius: 2px;
     cursor: pointer;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px var(--accent-color);
+    }
   }
 }
 
@@ -68,7 +74,7 @@
       margin-left: -20px;
       margin-right: -20px;
       transform: none;
-      border-top: 1px solid var(--menu-border-color);
+      border-top: 1px solid var(--line-color-2);
     }
   }
 }
@@ -80,7 +86,7 @@
 }
 
 .navigation--opened {
-  border-bottom: 1px solid var(--menu-border-color);
+  border-bottom: 1px solid var(--line-color-2);
 
   .navigation__menu {
     position: absolute;
