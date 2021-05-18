@@ -11,8 +11,12 @@
   @media (min-width: $tablet-width) {
     padding-left: 30px;
     padding-right: 30px;
+  }
 
-    &--form {
+  &--form {
+    display: block;
+
+    @media (min-width: $tablet-width) {
       padding-left: 70px;
       padding-right: 70px;
     }

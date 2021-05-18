@@ -166,6 +166,7 @@
     margin-right: 0;
     padding-left: 45px;
     line-height: 30px;
+    color: var(--contrast-dark-text-color);
     cursor: pointer;
 
     @media (min-width: $tablet-width) {
@@ -315,6 +316,18 @@
       fill: var(--error-color);
     }
   }
+
+  /* stylelint-disable property-no-vendor-prefix */
+  &[type="number"]::-webkit-inner-spin-button,
+  &[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  &[type="number"] {
+    -moz-appearance: textfield;
+  }
+  /* stylelint-enable property-no-vendor-prefix */
 }
 
 .form__field-container {
@@ -371,6 +384,7 @@
 .form__legend-content {
   position: relative;
   top: -18px;
+  display: block;
   max-width: 222px;
   width: fit-content;
   margin-left: -20px;

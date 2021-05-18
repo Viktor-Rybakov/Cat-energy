@@ -4,12 +4,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const button = navigation.querySelector('.navigation__menu-button');
   navigation.classList.remove('navigation--no-js');
 
-  if (window.matchMedia("(max-width: 767px)").matches) {
+  if (window.matchMedia('(max-width: 767px)').matches) {
     setMainMenu(navigation, button);
   }
 
   window.addEventListener('resize', () => {
-    if (window.matchMedia("(max-width: 767px)").matches) {
+    if (window.matchMedia('(max-width: 767px)').matches) {
       setMainMenu(navigation, button);
     } else {
       resetMainMenu(navigation, button);

@@ -10,6 +10,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    flex-wrap: wrap;
     background-color: unset;
   }
 }
@@ -25,6 +26,7 @@
     position: relative;
     display: block;
     min-height: auto;
+    margin-bottom: 10px;
     border-bottom: none;
 
     &:not(:last-of-type) {
@@ -45,6 +47,10 @@
       }
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 18px;
+  }
 }
 
 .main-menu__link {
@@ -62,6 +68,7 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 1;
+    color: var(--contrast-dark-text-color-2);
   }
 }
 
