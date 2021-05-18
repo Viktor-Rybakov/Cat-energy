@@ -127,8 +127,8 @@
 }
 
 .goal__link {
-  display: flex;
-  align-items: center;
+  position: relative;
+  padding-right: 56px;
   color: var(--contrast-dark-text-color);
   text-transform: uppercase;
   transition: 0.2s;
@@ -145,51 +145,44 @@
     outline: none;
     box-shadow: 0 0 0 2px var(--accent-color);
   }
-}
-
-.goal__link-text {
-  margin-right: 15px;
-
-  @media (min-width: $tablet-width) {
-    margin-right: 24px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-right: 27px;
-  }
-}
-
-.goal__link-icon-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
 
   &::before {
     content: "";
     position: absolute;
     top: 50%;
-    left: 0;
-    transform: translate(0, -50%);
+    right: 14px;
+    transform: translateY(-50%);
     display: block;
     width: 18px;
     height: 2px;
     background-color: var(--contrast-dark-text-color);
     transition: 0.2s;
   }
-}
 
-.goal__link-icon {
-  fill: var(--contrast-dark-text-color);
-  transform: translateX(16px);
-  transition: 0.2s;
-}
-
-.goal__link:hover {
-  .goal__link-icon {
-    transform: translateX(24px);
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-8px, -50%);
+    display: block;
+    width: 7px;
+    height: 12px;
+    background-image: url("../img/backgrounds/arrow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 0.2s;
   }
 
-  .goal__link-icon-wrapper::before {
-    width: 26px;
+  &:hover {
+    &::before {
+      width: 26px;
+      right: 6px;
+    }
+
+    &::after {
+      transform: translate(0, -50%);
+    }
   }
 }
