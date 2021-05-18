@@ -10,20 +10,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const sliderRange = slider.querySelector('.slider__range');
     const section = document.querySelector('.results');
 
-    if (window.matchMedia("(max-width: 767px)").matches) {
+    if (window.matchMedia('(max-width: 767px)').matches) {
       setMobileSlider();
     }
 
-    if (window.matchMedia("(min-width: 768px)").matches) {
+    if (window.matchMedia('(min-width: 768px)').matches) {
       setTabletSlider();
     }
 
     window.addEventListener('resize', () => {
-      if (window.matchMedia("(max-width: 767px)").matches) {
+      if (window.matchMedia('(max-width: 767px)').matches) {
         setMobileSlider();
       }
 
-      if (window.matchMedia("(min-width: 768px)").matches) {
+      if (window.matchMedia('(min-width: 768px)').matches) {
         setTabletSlider();
       }
     });

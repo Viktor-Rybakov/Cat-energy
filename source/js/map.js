@@ -1,4 +1,4 @@
-if (window.matchMedia("(max-width: 767px)").matches) {
+if (window.matchMedia('(max-width: 767px)').matches) {
   ymaps.ready(function () {
     let myMap = new ymaps.Map('map', {
         center: [59.938635, 30.323118],
@@ -16,7 +16,7 @@ if (window.matchMedia("(max-width: 767px)").matches) {
 
     myMap.geoObjects.add(myPlacemark);
   });
-} else if (window.matchMedia("(max-width: 1439px)").matches) {
+} else if (window.matchMedia('(max-width: 1439px)').matches) {
   ymaps.ready(function () {
     let myMap = new ymaps.Map('map', {
         center: [59.938635, 30.323118],
