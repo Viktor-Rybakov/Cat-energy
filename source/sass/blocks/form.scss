@@ -274,6 +274,7 @@
   &--textarea {
     width: 100%;
     height: 150px;
+    resize: vertical;
 
     @media (min-width: $tablet-width) {
       height: 175px;
